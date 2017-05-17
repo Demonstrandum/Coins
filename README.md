@@ -1,6 +1,10 @@
 # Coins
 A simple live terminal currency exchange rate converter in Ruby
 
+The currencies are retrieved from [fixer.io](http://fixer.io/) which is a "Foreign exchange rates and currency conversion API" which is a JSON API published by the 'European Central Bank'
+
+The rates are updated daily around 4 PM CET
+
 ## Installation
 Install the command line application with ruby-gems through rubygems.org
 by typing:
