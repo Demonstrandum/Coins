@@ -55,7 +55,7 @@ class Coins
 
 
   def parseArgs
-    if ARGV.empty? || args?('help')
+    if ARGV.empty? || args?('help') || args?('h') || args?('-h') || args?('--h')
       help
       exit 1
     end
