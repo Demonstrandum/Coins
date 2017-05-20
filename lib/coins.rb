@@ -2,10 +2,6 @@ require 'net/http'
 require 'json'
 
 class Coins
-  def initialize
-    parseArgs
-  end
-
   def setRate base
     begin
       @exchange = JSON.parse Net::HTTP.get(URI 'http://api.fixer.io/latest?base=' + base)
