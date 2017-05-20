@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'coins'
-  s.version     = '0.1.1'
+  s.version     = '0.1.2'
   s.required_ruby_version = '>= 1.9.2'
   s.executables << 'coins'
   s.date        = '2017-05-20'
