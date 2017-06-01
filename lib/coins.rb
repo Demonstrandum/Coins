@@ -12,20 +12,28 @@ class Coins
   end
 
   def help
-    puts "\n   A simple live terminal currency exchange rate converter in Ruby\n"\
-         "   The currencies are retrieved from fixer.io which is a\n"\
-         "   'Foreign exchange rates and currency conversion API'\n"\
-         "   which is a JSON API published by the 'European Central Bank'.\n\n"\
-         "   The rates are updated daily around 4 PM CET\n\n"\
-         "   Usage:\n"\
-         "   \"coins [rate(s)] [base/against] / [from] num(float/int ){CUR} [to] {CUR}\"\n"\
-         "   where CUR is the three letter currency "
-         "   (e.g. USD, GBP NOK, EUR, RUB, etc...)\n\n"\
-         "   use 'from `n` `CUR` to `CUR(other)`' toconvert between currencies.\n\n"\
-         "   use 'rates' to list all rates (see `base` also) or 'rate `CUR`'\n"\
-         "   to see the rate for one single currency.\n\n"\
-         "   use 'base `CUR`' or 'agains `CUR`' to change what the exchange rates compare to.\n"
-         "   Default rate base is USD\n\n"
+    help = <<EOF
+
+      A simple live terminal currency exchange rate converter in Ruby
+      The currencies are retrieved from fixer.io which is a
+      'Foreign exchange rates and currency conversion API'
+      which is a JSON API published by the 'European Central Bank'.
+
+      The rates are updated daily around 4 PM CET
+
+      Usage:
+        `coins [rate(s)] [base/against] / [from] num(float/int ){CUR} [to] {CUR}`
+      where CUR is the three letter currency
+      (e.g. USD, GBP NOK, EUR, RUB, etc...)
+        use 'from `n` `CUR` to `CUR(other)`' toconvert between currencies.
+        use 'rates' to list all rates (see `base` also) or 'rate `CUR`'
+      to see the rate for one single currency.
+        use 'base `CUR`' or 'agains `CUR`' to change what the exchange
+        rates compare to.
+      Default rate base is USD
+
+EOF
+    puts help
   end
 
   def args? this
